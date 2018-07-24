@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "mjml workflow avec gulp - mjml - et browser sync",
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
