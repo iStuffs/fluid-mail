@@ -1,26 +1,27 @@
-const gulp         = require('gulp'),
-      mjml         = require('gulp-mjml'),
-      browserSync  = require('browser-sync');
+const gulp = require('gulp');
+const mjml = require('gulp-mjml');
+const browserSync = require('browser-sync');
 
 
-gulp.task('htmlTask', function () {
+function htmlTask () {
     return gulp.src('./src/*.mjml')
     .pipe(mjml())
-    .pipe(gulp.dest('./dist'))
-})
+    .pipe(gulp.dest('./dist'));
+}
 
-gulp.task('refresh', function() {
+function refresh(done) {
     browserSync.init({
-      server: {
-        baseDir: "./dist/"
-      },
-      port: '8080'
+        server: {
+            baseDir: './dist/',
+            },
+        port: '8080',
     });
-  });
+    done();
+}
 
-  gulp.task('watch', ['htmlTask', 'refresh'], function () {
-    gulp.watch('./src/*.mjml', ['htmlTask']);
+gulp.task('watch', gulp.series(htmlTask, refresh, function() {
+    gulp.watch('./src/*.mjml', gulp.series(htmlTask));
     gulp.watch('./dist/*.html').on('change', browserSync.reload);
-  });
-  
-  gulp.task('default', ['watch']);
+}));
+
+gulp.task('default', gulp.series('watch'));
