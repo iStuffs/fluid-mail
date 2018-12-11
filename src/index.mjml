@@ -1,5 +1,81 @@
 <mjml>
-  <mj-body>
-  <mj-text font-size="20px" color="#333333" font-family="helvetica">Hello World</mj-text>
-  </mj-body>
+    <mj-head>
+        <mj-title>Water Mail: a MJML Workflow</mj-title>
+        <mj-preview>Water Mail is a MJML gulp workflow</mj-preview>
+        <mj-attributes>
+            <!-- put here your default config of mjmkl components -->
+            <mj-all padding="0px" />
+            <mj-body width="640px" background-color="#e1e1e1"/>
+            <mj-section background-color="#ffffff" padding="15px" />
+            <mj-text font-family="verdana, sans-serif" />
+        </mj-attributes>
+        <mj-style inline="inline">
+            /* put here your css that will be inlinized */
+            .main-title div{
+                color: #3498db !important;
+                font-size: 40px !important;
+            }
+            .body{
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .text-body div{
+                font-size: 16px !important;
+                font-style: italic !important;
+            }
+            .link{
+                color: #555555 !important;
+                text-decoration: underline !important;
+            }
+        </mj-style>
+        <mj-style>
+            /* put here your css media queries */
+            @media all and (max-width: 639px) {
+                .main-title div{
+                    font-size: 18px !important;
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                }
+                .body{
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                }
+                .text-body div{
+                    font-size: 14px !important;
+                }
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body>
+        <mj-section>
+            <mj-group>
+                <mj-column>
+                    <mj-text>Hello world</mj-text>
+                </mj-column>
+                <mj-column>
+                    <mj-text align="right"><a class="link" target="_blank" href="*|ARCHIVE|*" class="link-header">Ouvrir dans votre navigateur</a></mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text align="center" css-class="main-title">Welcome to Water Mail</mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column css-class="body">
+                <mj-text css-class="text-body" align="center">Water Mail is a MJML gulp workflow</mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text align="center">
+                    Vous n'arrivez pas à lire ce mail ? <a href="*|ARCHIVE|*" class="link" target="_blank">Cliquez ici</a>
+                </mj-text>
+                <mj-text align="center">
+                    Si vous ne souhaitez plus recevoir d'email de notre part, <a href="*|UNSUB|*" target="_blank" class="link">désabonnez-vous</a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
 </mjml>
