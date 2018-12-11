@@ -1,7 +1,7 @@
 <mjml>
     <mj-head>
-        <mj-title>Water Mail: a MJML Workflow</mj-title>
-        <mj-preview>Water Mail is a MJML gulp workflow</mj-preview>
+        <mj-title>Fluid Mail: a MJML Workflow</mj-title>
+        <mj-preview>Fluid Mail is a MJML gulp workflow</mj-preview>
         <mj-attributes>
             <!-- put here your default config of mjmkl components -->
             <mj-all padding="0px" />
@@ -59,12 +59,12 @@
         </mj-section>
         <mj-section>
             <mj-column>
-                <mj-text align="center" css-class="main-title">Welcome to Water Mail</mj-text>
+                <mj-text align="center" css-class="main-title">Welcome to Fluid Mail</mj-text>
             </mj-column>
         </mj-section>
         <mj-section>
             <mj-column css-class="body">
-                <mj-text css-class="text-body" align="center">Water Mail is a MJML gulp workflow</mj-text>
+                <mj-text css-class="text-body" align="center">Fluid Mail is a MJML gulp workflow</mj-text>
             </mj-column>
         </mj-section>
         <mj-section>

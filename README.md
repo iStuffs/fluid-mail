@@ -1,8 +1,8 @@
-# Water Mail
+# Fluid Mail
 
 ## What
 
-Water mail is a boilerplate to kick start your emailing projects.
+Fluid mail is a boilerplate to kick start your emailing projects.
 It uses [mjml](https://mjml.io/) email templating framework.
 
 ## Features
@@ -20,7 +20,7 @@ Only 3 simple steps
 1. Clone the repository
 
 ```
-    git clone https://github.com/iStuffs/mjmlworkflow.git
+    git clone https://github.com/iStuffs/fluid-mail.git
 ```
 
 2. Install dependencies

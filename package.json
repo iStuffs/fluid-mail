@@ -1,5 +1,5 @@
 {
-  "name": "mjml-workflow",
+  "name": "fluid-mail",
   "version": "1.0.0",
   "description": "mjml workflow avec gulp - mjml - et browser sync",
   "main": "gulpfile.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iStuffs/mjmlworkflow.git"
+    "url": "git+https://github.com/iStuffs/fluid-mail.git"
   },
   "keywords": [
     "gulp",
@@ -26,7 +26,7 @@
   "author": "iStuffs - Samuel DIDIER-LAURENT",
   "license": "CC-BY-NC-SA-4.0",
   "bugs": {
-    "url": "https://github.com/iStuffs/mjmlworkflow/issues"
+    "url": "https://github.com/iStuffs/fluid-mail/issues"
   },
-  "homepage": "https://github.com/iStuffs/mjmlworkflow#readme"
+  "homepage": "https://github.com/iStuffs/fluid-mail#readme"
 }
