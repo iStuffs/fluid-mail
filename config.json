@@ -1,0 +1,6 @@
+{
+    "mjml": {
+        "minify": true,
+        "validationLevel": "strict"
+    }
+}
