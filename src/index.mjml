@@ -10,6 +10,15 @@
             <mj-text font-family="verdana, sans-serif" />
         </mj-attributes>
         <mj-style inline="inline">
+            /*  prevent ios device injecting data links default styling  */
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size: inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
             /* put here your css that will be inlinized */
             .main-title div{
                 color: #3498db !important;
